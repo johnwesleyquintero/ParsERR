@@ -28,8 +28,8 @@ export default function ErrorParserTool() {
   }
 
   const handleCopyMarkdown = () => {
-    const markdown = convertToMarkdown(errors, additionalNotes)
-    navigator.clipboard.writeText(markdown)
+    const markdown = convertToMarkdown(filteredErrors, additionalNotes);
+    navigator.clipboard.writeText(markdown);
   }
 
   const handleClearOutput = () => {
@@ -171,7 +171,7 @@ export default function ErrorParserTool() {
               <Button onClick={handleCopyMarkdown}>
                 <Copy className="mr-2 h-4 w-4" /> Copy as Markdown
               </Button>
-              <Button onClick={() => downloadErrors(errors)}>
+              <Button onClick={() => downloadErrors(filteredErrors)}>
                 <Download className="mr-2 h-4 w-4" /> Download as CSV
               </Button>
             </div>
