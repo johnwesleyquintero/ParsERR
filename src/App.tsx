@@ -1,5 +1,5 @@
-import ErrorParserTool from '@/components/ErrorParserTool'
-import { Header } from '@/components/Header'
+import ErrorParserTool from "@/components/ErrorParserTool";
+import { Header } from "@/components/Header";
 
 export default function App() {
   return (
@@ -7,5 +7,5 @@ export default function App() {
       <Header />
       <ErrorParserTool />
     </div>
-  )
+  );
 }
