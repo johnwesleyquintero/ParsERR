@@ -1,6 +1,6 @@
 import { ParsedError } from '@/lib/types'
 import { Card } from './ui/card'
-import { Chart } from 'lucide-react'
+import { BarChart } from 'lucide-react'
 
 interface ErrorStatsProps {
   errors: ParsedError[]
@@ -15,7 +15,7 @@ export function ErrorStats({ errors }: ErrorStatsProps) {
   return (
     <Card className="p-4 mb-4">
       <div className="flex items-center space-x-2 mb-2">
-        <Chart className="h-5 w-5" />
+        <BarChart className="h-5 w-5" />
         <h3 className="text-lg font-semibold">Error Statistics</h3>
       </div>
       <div className="grid grid-cols-2 md:grid-cols-4 gap-4">
