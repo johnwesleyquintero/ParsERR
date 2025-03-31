@@ -40,7 +40,7 @@ ParsERR is a modern web application that can parse and analyze any type of error
 
 ```bash
 # Clone the repository
-git clone https://github.com/yourusername/ParsERR.git
+git clone https://github.com/johnwesleyquintero/ParsERR.git
 
 # Navigate to the project directory
 cd ParsERR
