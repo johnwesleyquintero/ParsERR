@@ -1,0 +1,35 @@
+<svg width="512" height="512" viewBox="0 0 512 512" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <rect width="512" height="512" rx="100" fill="url(#bg-gradient)"/>
+  <defs>
+    <linearGradient id="bg-gradient" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#111"/>
+      <stop offset="100%" stop-color="#000"/>
+    </linearGradient>
+    <pattern id="circuit" patternUnits="userSpaceOnUse" width="40" height="40">
+      <path d="M0 20H40M20 0V40" stroke="#333" stroke-width="1" opacity="0.1"/>
+    </pattern>
+  </defs>
+  <rect width="512" height="512" rx="100" fill="url(#circuit)" opacity="0.1"/>
+  
+  <!-- Parsing Flow (White Arrow) -->
+  <path d="M156 256L236 336L356 176" stroke="#fff" stroke-width="40" stroke-linecap="round" stroke-linejoin="round" stroke-opacity="0.9" filter="url(#shadow)"/>
+  
+  <!-- Error Input (Red Arrow) -->
+  <path d="M256 128L336 208L416 128" stroke="url(#error-gradient)" stroke-width="40" stroke-linecap="round" stroke-linejoin="round"/>
+  
+  <!-- Resolved Output (Green Arrow) -->
+  <path d="M96 384L176 304L256 384" stroke="#34C759" stroke-width="40" stroke-linecap="round" stroke-linejoin="round" filter="url(#glow)"/>
+  
+  <defs>
+    <linearGradient id="error-gradient" x1="256" y1="128" x2="416" y2="128" gradientUnits="userSpaceOnUse">
+      <stop offset="0%" stop-color="#FF3B30"/>
+      <stop offset="100%" stop-color="#FF6B60"/>
+    </linearGradient>
+    <filter id="shadow" x="140" y="160" width="232" height="192" filterUnits="userSpaceOnUse">
+      <feDropShadow dx="0" dy="4" stdDeviation="8" flood-color="#fff" flood-opacity="0.2"/>
+    </filter>
+    <filter id="glow" x="80" y="288" width="192" height="112" filterUnits="userSpaceOnUse">
+      <feDropShadow dx="0" dy="4" stdDeviation="12" flood-color="#34C759" flood-opacity="0.3"/>
+    </filter>
+  </defs>
+</svg>
