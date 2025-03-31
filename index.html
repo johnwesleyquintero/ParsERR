@@ -2,9 +2,6 @@
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
-    <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
-    <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png" />
-    <link rel="manifest" href="/site.webmanifest" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta name="theme-color" content="#000000" />
     <meta
@@ -19,6 +16,20 @@
     <meta property="og:image" content="/preview.png" />
     <meta property="og:url" content="https://parserr.vercel.app" />
     <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:title" content="ParsERR - Error Log Parser" />
+    <meta name="twitter:description" content="Parse and analyze error logs with ease" />
+    <meta name="twitter:image" content="/preview.png" />
+    
+    <!-- Preload critical assets -->
+    <link rel="preload" href="/src/main.tsx" as="script" />
+    <link rel="preload" href="/favicon.svg" as="image" type="image/svg+xml" />
+    
+    <!-- Icons -->
+    <link rel="icon" href="/favicon.svg" type="image/svg+xml" />
+    <link rel="alternate icon" href="/favicon.ico" type="image/x-icon" />
+    <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png" />
+    <link rel="manifest" href="/site.webmanifest" />
+    
     <title>ParsERR - Error Log Parser</title>
   </head>
   <body>
