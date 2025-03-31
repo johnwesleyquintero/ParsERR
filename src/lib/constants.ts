@@ -21,31 +21,31 @@ export const errorPatterns: ErrorPattern[] = [
     {
         pattern: /syntax error/i,
         summary: "Syntax Error: $0",
-        fix: (match) => `Check the syntax in the code. Ensure all brackets, quotes, and semicolons are correctly placed. Refer to the [MDN Web Docs](https://developer.mozilla.org/) for more details on syntax rules.`
+        fix: (_match) => `Check the syntax in the code. Ensure all brackets, quotes, and semicolons are correctly placed. Refer to the [MDN Web Docs](https://developer.mozilla.org/) for more details on syntax rules.`
     },
     {
         pattern: /type error/i,
         summary: "Type Error: $0",
-        fix: (match) => `Check the type definitions in the code. Ensure that the types are correctly defined and used. Refer to the [TypeScript Handbook](https://www.typescriptlang.org/docs/handbook/) for more details on type usage.`
+        fix: (_match) => `Check the type definitions in the code. Ensure that the types are correctly defined and used. Refer to the [TypeScript Handbook](https://www.typescriptlang.org/docs/handbook/) for more details on type usage.`
     },
     {
         pattern: /runtime error/i,
         summary: "Runtime Error: $0",
-        fix: (match) => `Check the runtime environment and code execution. Ensure that all dependencies are correctly installed and configured. Refer to the [JavaScript Documentation](https://developer.mozilla.org/en-US/docs/Web/JavaScript) for more details on runtime issues.`
+        fix: (_match) => `Check the runtime environment and code execution. Ensure that all dependencies are correctly installed and configured. Refer to the [JavaScript Documentation](https://developer.mozilla.org/en-US/docs/Web/JavaScript) for more details on runtime issues.`
     },
     {
         pattern: /compilation error/i,
         summary: "Compilation Error: $0",
-        fix: (match) => `Check the build configuration and code. Ensure that all dependencies are correctly installed and configured. Refer to the [Webpack Documentation](https://webpack.js.org/concepts/) for more details on build configurations.`
+        fix: (_match) => `Check the build configuration and code. Ensure that all dependencies are correctly installed and configured. Refer to the [Webpack Documentation](https://webpack.js.org/concepts/) for more details on build configurations.`
     },
     {
         pattern: /network error/i,
         summary: "Network Error: $0",
-        fix: (match) => `Check the network configuration and connectivity. Ensure that all network requests are correctly handled. Refer to the [Fetch API Documentation](https://developer.mozilla.org/en-US/docs/Web/API/Fetch_API) for more details on network requests.`
+        fix: (_match) => `Check the network configuration and connectivity. Ensure that all network requests are correctly handled. Refer to the [Fetch API Documentation](https://developer.mozilla.org/en-US/docs/Web/API/Fetch_API) for more details on network requests.`
     },
     {
         pattern: /file error/i,
         summary: "File Error: $0",
-        fix: (match) => `Check the file paths and permissions. Ensure that all files are correctly referenced and accessible. Refer to the [File System Documentation](https://nodejs.org/api/fs.html) for more details on file operations.`
+        fix: (_match) => `Check the file paths and permissions. Ensure that all files are correctly referenced and accessible. Refer to the [File System Documentation](https://nodejs.org/api/fs.html) for more details on file operations.`
     }
 ]
